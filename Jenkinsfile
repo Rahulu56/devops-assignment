@@ -53,7 +53,7 @@ pipeline {
                         docker pull ${FULL_IMAGE}
                         docker stop app-container || true
                         docker rm app-container || true
-                        docker run -d --name app-container -p 8080:8080 ${FULL_IMAGE}
+                        docker run -d --name app-container -p 8081:8080 ${FULL_IMAGE}
                     '
                     """
                 }
