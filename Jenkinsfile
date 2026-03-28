@@ -48,7 +48,7 @@ pipeline {
             steps {
                 sshagent(['ec2-ssh-key']) {
                     sh """
-                    ssh -o StrictHostKeyChecking=no ubuntu@${DEV_SERVER_IP} '
+                    ssh -o StrictHostKeyChecking=no ubuntu@${PROD_SERVR_ip} '
                         docker pull ${FULL_IMAGE}
                         docker stop app-container || true
                         docker rm app-container || true
