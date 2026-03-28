@@ -3,8 +3,7 @@ pipeline {
 
     environment {
         // Replace these with your actual EC2 Public IPs
-        DEV_SERVER_IP  = 'YOUR_DEV_EC2_PUBLIC_IP'
-        PROD_SERVER_IP = 'YOUR_PROD_EC2_PUBLIC_IP'
+        PROD_SERVER_IP = '13.218.111.119'
         
         DOCKER_USER    = 'rahul699'
         IMAGE_NAME     = 'devops-assignment'
